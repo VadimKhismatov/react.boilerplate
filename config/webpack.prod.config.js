@@ -49,13 +49,6 @@ module.exports = (paths) => {
                     }),
                 },
                 {
-                    test: /\.(eot|woff|woff2)$/,
-                    loader: 'file-loader',
-                    options: {
-                        name: 'fonts/[name].[ext]'
-                    },
-                },
-                {
                     test: /\.(gif|png|jpe?g|svg)$/i,
                     use: [
                         {

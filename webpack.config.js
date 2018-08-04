@@ -18,15 +18,18 @@ const paths = {
 
 const common = merge([
     {
-        entry: `${paths.src}/app/app.js`,
+        entry: `${paths.src}/app/index.js`,
         output: {
             path: paths.dist,
             filename: './js/app.bundled.js'
         },
+        resolve: {
+            extensions: ['.js', ' ', '.jsx', '.css', '.scss']
+        },
         module: {
             rules: [
                 {
-                    test: /\.js$/,
+                    test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
                     use: {
                         loader: 'babel-loader'
@@ -36,7 +39,7 @@ const common = merge([
                     test: /\.(eot|woff|woff2)$/,
                     loader: 'file-loader',
                     options: {
-                        name: 'fonts/[name].[ext]'
+                        name: 'fonts/[name].[ext]',
                     },
                 },
             ]
