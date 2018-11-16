@@ -1,5 +1,5 @@
-//CSS
-//import '../scss/base/fonts';
+// CSS
+// import '../scss/base/fonts';
 import '../scss/base/main';
 
 import React from 'react';
@@ -9,8 +9,9 @@ import { BrowserRouter } from 'react-router-dom';
 // components
 import App from './app';
 
-render((
+render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
-), document.getElementById('app'));
+  </BrowserRouter>,
+  document.getElementById('app'),
+);

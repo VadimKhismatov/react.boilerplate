@@ -8,11 +8,9 @@ import Home from './components/home/home';
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
 const Routes = () => (
-
-    <Switch>
-        <Route exact path='/' component={Home} />
-    </Switch>
-
+  <Switch>
+    <Route exact path="/" component={Home} />
+  </Switch>
 );
 
 export default Routes;
