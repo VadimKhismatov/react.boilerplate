@@ -8,11 +8,11 @@ class Header extends React.Component {
 
   render() {
     return (
-      <section className="header_component">
+      <header className="header_component">
         <div className="container">
-          <h1>Hello world!</h1>
+          <div className="content">Header</div>
         </div>
-      </section>
+      </header>
     );
   }
 }

@@ -1,1 +1,22 @@
 @import '../../../scss/base/helpers.scss';
+
+.header_component {
+  & .container {
+    display: flex;
+    justify-content: center;
+    & .content {
+      width: 50vw;
+      height: 100px;
+      line-height: 100px;
+      font-family: $roman;
+      font-size: em(36);
+      text-align: center;
+      color: #e0e0e0;
+      border-bottom: 1px solid #6e6e6e;
+      border-left: 1px solid #6e6e6e;
+      border-right: 1px solid #6e6e6e;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}

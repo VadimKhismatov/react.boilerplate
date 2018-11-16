@@ -1,5 +1,5 @@
 // CSS
-// import '../scss/base/fonts';
+import '../scss/base/fonts';
 import '../scss/base/main';
 
 import React from 'react';

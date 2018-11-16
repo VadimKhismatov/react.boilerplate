@@ -7,11 +7,11 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home_page">
+      <>
         {/* header start  */}
         <Header />
         {/* header end  */}
-      </div>
+      </>
     );
   }
 }
