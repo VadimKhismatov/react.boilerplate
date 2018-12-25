@@ -1,5 +1,5 @@
 {
   // Fit code within this line limit
-  "prettier.printWidth": 200,
-  "prettier.trailingComma": "all",
+  "prettier.printWidth": 120,
+  "prettier.trailingComma": "all"
 }
